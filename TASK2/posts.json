@@ -1,0 +1,23 @@
+[
+  {
+    "id": "c098a1b8-d378-407d-8698-0ecfa0102512",
+    "author": "John Smith",
+    "title": "Understanding JavaScript Closures",
+    "description": "A beginner-friendly guide to closures in JavaScript.",
+    "post": "Closures allow functions to retain access to their lexical scope, even when executed outside of it. This post explains closures with practical examples."
+  },
+  {
+    "id": "c098a1b8-d378-407d-8698-0ecfa0102513",
+    "author": "Emma Williams",
+    "title": "CSS Grid vs Flexbox",
+    "description": "When to use CSS Grid and when to use Flexbox.",
+    "post": "CSS Grid and Flexbox are powerful layout tools, but they serve different purposes. Grid is best for two-dimensional layouts, while Flexbox excels in one-dimensional arrangements."
+  },
+  {
+    "id": "c098a1b8-d378-407d-8698-0ecfa0102519",
+    "author": "Michael Brown",
+    "title": "Introduction to Machine Learning",
+    "description": "Breaking down ML concepts for beginners.",
+    "post": "Machine learning is transforming industries. This post explains key concepts like supervised learning, unsupervised learning, and reinforcement learning."
+  }
+]

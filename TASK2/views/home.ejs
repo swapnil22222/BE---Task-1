@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link rel="stylesheet" href="/css/bootstrap.min.css" />
+    <script src="/js/jquery.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <%- include('partials/navBar.ejs') %>
+
+    <div class="container">
+      <h1>ALL POSTS</h1>
+    </div>
+    <div
+      class="container"
+      style="
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1em;
+        align-items: center;
+        margin: 1em auto;
+      "
+    >
+      <% for (let post of posts) { %>
+      <div class="card" style="width: 18rem; height: 20em">
+        <div class="card-body">
+          <h5 class="card-title"><u><%= post.title %></u></h5>
+          <h6 class="card-subtitle mb-2 text-body-secondary">
+            (<%= post.description %>)
+          </h6>
+          <p class="card-text" style="height: 10em; overflow: hidden">
+            <%= post.post %>
+          </p>
+        </div>
+        <a href="/posts/<%=post.id%>" class="card-link">Details</a>
+      </div>
+      <% } %>
+    </div>
+
+    <div class="container" style="margin: 1em auto">
+      <a href="/posts/addPost"
+        ><button type="button" class="btn btn-primary">+ Add Post</button></a
+      >
+    </div>
+  </body>
+</html>

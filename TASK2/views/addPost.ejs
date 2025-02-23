@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add post</title>
+    <link rel="stylesheet" href="/css/bootstrap.min.css" />
+    <script src="/js/jquery.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <%- include('partials/navBar.ejs') %>
+
+    <form action="/posts" method="post" class="container">
+      <h1>Add post</h1>
+      <div class="mb-3">
+        <label for="author" class="form-label">Author</label>
+        <input
+          type="text"
+          class="form-control"
+          id="author"
+          name="author"
+          placeholder="author"
+          required
+        />
+      </div>
+      <div class="mb-3">
+        <label for="title" class="form-label">Title</label>
+        <input
+          type="text"
+          class="form-control"
+          id="title"
+          name="title"
+          placeholder="title"
+          required
+        />
+      </div>
+      <div class="mb-3">
+        <label for="description" class="form-label">Description</label>
+        <input
+          type="text"
+          class="form-control"
+          id="description"
+          name="description"
+          placeholder="description"
+        />
+      </div>
+      <div class="mb-3">
+        <label for="post" class="form-label">Post</label>
+        <textarea
+          type="text"
+          class="form-control"
+          id="content"
+          name="content"
+          placeholder="post"
+          required
+        ></textarea>
+      </div>
+
+      <button>Add</button>
+      <a href="/posts">Home</a>
+    </form>
+  </body>
+</html>
